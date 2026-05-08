@@ -20,18 +20,18 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy project files
+# Copy project files (excluding .venv, __pycache__, .git)
 COPY . .
 
 # Build FAISS index if not exists
 RUN if [ ! -f catalog.index ]; then python build_index.py; fi
 
-# Expose port
-EXPOSE 8080
+# Expose port from environment
+EXPOSE $PORT
 
 # Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:8080/health || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:$PORT/health || exit 1
 
-# Run the service
-CMD ["python", "main.py"]
+# Run the service using PORT from environment
+CMD ["python", "-c", "import os; import uvicorn; from main import app; uvicorn.run(app, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))"]

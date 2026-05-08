@@ -19,13 +19,18 @@ from agent import SHLAgent
 # Global agent instance
 agent = None
 
+# Get port from environment (Render sets this)
+PORT = int(os.environ.get("PORT", 8080))
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Load resources at startup."""
     global agent
 
+    print("=" * 50)
     print("Starting SHL Assessment Recommender...")
+    print(f"Port: {PORT}")
     print("Loading FAISS index and model...")
 
     try:
@@ -38,9 +43,12 @@ async def lifespan(app: FastAPI):
         print("Agent initialized")
 
         print("Ready!")
+        print("=" * 50)
 
     except Exception as e:
         print(f"Error during startup: {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
     yield
@@ -150,9 +158,11 @@ async def chat(request: ChatRequest):
 
     except Exception as e:
         print(f"Error processing chat: {e}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=PORT)
