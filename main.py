@@ -20,7 +20,8 @@ from agent import SHLAgent
 agent = None
 
 # Get port from environment (Render sets this)
-PORT = int(os.environ.get("PORT", 8080))
+# Default to 10000 for Render Docker, or 8080 for local
+PORT = int(os.environ.get("PORT", 10000))
 
 
 @asynccontextmanager
