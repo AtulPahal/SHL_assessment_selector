@@ -5,7 +5,6 @@ import json
 import os
 import sys
 import httpx
-from typing import Dict, List
 
 BASE_URL = os.environ.get("BASE_URL", "http://localhost:8080")
 
