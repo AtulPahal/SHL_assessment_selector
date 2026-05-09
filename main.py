@@ -90,7 +90,7 @@ def health():
 
 
 @app.post("/chat", response_model=ChatResponse)
-def chat(request: ChatRequest):
+async def chat(request: ChatRequest):
     global agent
     if agent is None:
         raise HTTPException(status_code=503, detail="Service not initialized")
@@ -98,7 +98,7 @@ def chat(request: ChatRequest):
     messages = [m.model_dump() for m in request.messages]
 
     try:
-        response = agent.process(messages)  # Synchronous
+        response = await agent.process(messages)
         return ChatResponse(
             reply=response.get("reply", ""),
             recommendations=[
