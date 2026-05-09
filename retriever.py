@@ -31,19 +31,14 @@ class Retriever:
         with open(self.meta_path, "r", encoding="utf-8") as f:
             self.metadata = json.load(f)
 
-        print("Loading embedding model...")
+        print("Loading embedding model (all-MiniLM-L6-v2)...")
+        # Use a smaller model for faster loading
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
+        print("Model loaded successfully")
 
     def retrieve(self, query: str, top_k: int = 15) -> List[Dict]:
         """
         Retrieve top-k assessments for a query.
-
-        Args:
-            query: Natural language query string
-            top_k: Number of results to return (max 15)
-
-        Returns:
-            List of assessment dicts with name, url, test_type, description, score
         """
         top_k = min(top_k, self.index.ntotal)
         query = query.strip()

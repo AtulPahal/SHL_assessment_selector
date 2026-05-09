@@ -2,31 +2,18 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
-# Create and activate venv
-RUN python -m venv /app/.venv
-ENV PATH="/app/.venv/bin:$PATH"
-
-# Install Python dependencies
+# Install dependencies first (better caching)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy project files
+# Copy all project files
 COPY . .
 
-# Build FAISS index if not exists
-RUN if [ ! -f catalog.index ]; then python build_index.py; fi
+# Build FAISS index at build time (not run time)
+RUN python build_index.py
 
-# Expose port 10000 (Render expects this by default)
+# Expose port
 EXPOSE 10000
 
-# Run the service - Render will set PORT env var
+# Run
 CMD ["python", "main.py"]
