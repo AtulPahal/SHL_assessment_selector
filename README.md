@@ -27,7 +27,7 @@ FastAPI Service (main.py)
          ↓
     Retriever (retriever.py) → FAISS vector search
          ↓
-    LLM (Gemini 1.5 Flash) → Natural language response
+    LLM (hy3-preview(any model)) → Natural language response
 ```
 
 ## Quick Start
