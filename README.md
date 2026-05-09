@@ -45,7 +45,7 @@ cp .env.example .env
 # Edit .env and add your GEMINI_API_KEY
 ```
 
-Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
+Get your API key from [Openrouter](https://openrouter.ai/workspaces/default/keys).
 
 ### 3. Build the Index
 
