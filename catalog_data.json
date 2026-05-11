@@ -1,0 +1,394 @@
+{
+  "documents": [
+    "Global Skills Development Report | Comprehensive report providing insights into candidate's skills across multiple domains including cognitive, behavioral, and competency areas. | Test types: A, B, C, D, E, P | Job levels: Entry, Mid, Senior, Executive | Languages: Multiple | Duration: 45-60 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Occupational Personality Questionnaire (OPQ32r) | Industry-leading personality assessment measuring 32 dimensions across 5 personality domains. Provides accurate, fair assessments of worker potential. | Test types: P | Job levels: Entry, Mid, Senior, Executive | Languages: Multiple | Duration: 20-30 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Verify Cognitive Assessment | Interactive cognitive assessment measuring numerical, verbal, and inductive reasoning abilities. Ideal for screening at scale. | Test types: A | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-45 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Motivational Questionnaire (MQ) | Measures work-related motivational patterns and needs. Matches individual motivation to team and organizational goals. | Test types: P | Job levels: Mid, Senior | Languages: Multiple | Duration: 15-20 minutes | Supports remote testing",
+    "SHL Situational Judgment Test (SJT) | Presents realistic work scenarios and measures judgment and decision-making. Tests behavioral fit to roles with immersive, interactive scenarios. | Test types: B, S | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 25-35 minutes | Supports remote testing",
+    "SHL 360 Feedback | Multi-source feedback from peers, managers, and direct reports. Provides comprehensive view of behavioral competencies in workplace context. | Test types: B | Job levels: Mid, Senior, Executive | Languages: Multiple | Duration: 15-20 minutes | Supports remote testing",
+    "SHL Technical Skills Assessment | Comprehensively evaluates technical concepts, knowledge, and application covering 200+ specific IT skills across multiple technologies. | Test types: K | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 30-90 minutes | Supports remote testing",
+    "SHL Coding Simulation | AI-powered online coding simulation measuring accuracy, logical correctness, and problem-solving abilities for tech candidates. | Test types: S, K | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 45-120 minutes | Supports remote testing",
+    "SHL Business Skills Assessment | Assess candidates for essential business skills and computer literacy that enterprise teams need today. | Test types: K, S | Job levels: Entry, Mid | Languages: Multiple | Duration: 20-45 minutes | Supports remote testing",
+    "SHL Call Center Simulation | Job simulation that emulates a real call center environment. Pressure-test agents for success in customer service roles. | Test types: S | Job levels: Entry, Mid | Languages: Multiple | Duration: 30-45 minutes | Supports remote testing",
+    "SHL Language Evaluation | AI-powered language assessments for building a strong multilingual workforce. Evaluate reading, writing, and speaking proficiency. | Test types: K | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-60 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Universal Competency Framework | Provides rational, consistent, and practical understanding of people's behaviors at work and their potential to succeed in roles. | Test types: B | Job levels: Entry, Mid, Senior, Executive | Languages: Multiple | Duration: 15-20 minutes | Supports remote testing",
+    "SHL Realistic Job Preview (RJP) | Scenario-based quizzes that give candidates a feel for what the job would be like before committing to apply. Improves candidate experience. | Test types: S, B | Job levels: Entry, Mid | Languages: Multiple | Duration: 15-25 minutes | Supports remote testing",
+    "SHL Numerical Reasoning | Assesses ability to evaluate and analyze numerical information presented in tables, charts, and graphs. | Test types: A | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-35 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Verbal Reasoning | Measures ability to evaluate logical validity of arguments and analyze textual information presented in written form. | Test types: A | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-35 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Inductive Reasoning | Tests ability to identify patterns and trends in complex data sets and predict outcomes based on given information. | Test types: A | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-40 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Deductive Reasoning | Evaluates logical thinking and ability to draw conclusions from premises using formal reasoning patterns. | Test types: A | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 20-35 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Work Technology Profile | Assessment measuring comfort and proficiency with workplace technologies, software, and digital collaboration tools. | Test types: K | Job levels: Entry, Mid | Languages: Multiple | Duration: 15-25 minutes | Supports remote testing",
+    "SHL Manager Potential Survey | Identifies management potential by evaluating leadership readiness, people management skills, and strategic thinking. | Test types: P, B | Job levels: Mid, Senior | Languages: Multiple | Duration: 25-35 minutes | Supports remote testing",
+    "SHL Sales Talent Assessment | Evaluates sales competencies including prospecting, relationship building, negotiation, and closing abilities. | Test types: A, B, P | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 30-45 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Customer Service Assessment | Tests customer service skills including communication, problem-solving, empathy, and service orientation. | Test types: A, B, S | Job levels: Entry, Mid | Languages: Multiple | Duration: 25-40 minutes | Supports remote testing",
+    "SHL Graduate招聘Assessment | Comprehensive assessment battery designed for graduate and entry-level hiring. Measures cognitive ability, personality, and motivation. | Test types: A, B, P | Job levels: Entry | Languages: Multiple | Duration: 45-60 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Integrity Assessment | Measures conscientiousness, reliability, and adherence to workplace standards and ethical guidelines. | Test types: P | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 15-20 minutes | Supports remote testing",
+    "SHL Critical Thinking Assessment | Evaluates higher-order thinking skills including analysis, evaluation, inference, and problem-solving. | Test types: A | Job levels: Mid, Senior, Executive | Languages: Multiple | Duration: 30-40 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Data Analysis Assessment | Tests ability to work with data including statistical analysis, data visualization interpretation, and data-driven decision making. | Test types: A, K | Job levels: Mid, Senior | Languages: Multiple | Duration: 35-50 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Leadership Assessment | Comprehensive leadership evaluation covering strategic thinking, team leadership, change management, and organizational awareness. | Test types: B, P | Job levels: Senior, Executive | Languages: Multiple | Duration: 35-50 minutes | Supports remote testing",
+    "SHL Mechanical Reasoning | Assesses understanding of mechanical principles, tools, and practical physical concepts in technical roles. | Test types: A | Job levels: Entry, Mid | Languages: Multiple | Duration: 25-35 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Checking Assessment | Measures accuracy and attention to detail in tasks involving data verification, error detection, and quality control. | Test types: A | Job levels: Entry, Mid | Languages: Multiple | Duration: 15-25 minutes | Supports remote testing | Adaptive/IRT assessment",
+    "SHL Work Style Assessment | Identifies preferred work styles including collaboration preferences, autonomy needs, and work pace alignment. | Test types: P | Job levels: Entry, Mid, Senior | Languages: Multiple | Duration: 15-20 minutes | Supports remote testing",
+    "SHL Financial Reasoning | Tests financial literacy and ability to work with financial concepts including accounting, finance, and business math. | Test types: A, K | Job levels: Mid, Senior | Languages: Multiple | Duration: 25-40 minutes | Supports remote testing | Adaptive/IRT assessment",
+    ".NET Framework 4.5 |  | Test types: K | Job levels:  | Languages: ",
+    ".NET MVC (New) |  | Test types: K | Job levels:  | Languages: ",
+    ".NET MVVM (New) |  | Test types: K | Job levels:  | Languages: ",
+    ".NET WCF (New) |  | Test types: K | Job levels:  | Languages: ",
+    ".NET WPF (New) |  | Test types: K | Job levels:  | Languages: ",
+    ".NET XAML (New) |  | Test types: K | Job levels:  | Languages: ",
+    "Accounts Payable (New) |  | Test types: K | Job levels:  | Languages: ",
+    "Accounts Payable Simulation (New) |  | Test types: S | Job levels:  | Languages: ",
+    "Accounts Receivable (New) |  | Test types: K | Job levels:  | Languages: ",
+    "Accounts Receivable Simulation (New) |  | Test types: S | Job levels:  | Languages: ",
+    "ADO.NET (New) |  | Test types: K | Job levels:  | Languages: "
+  ],
+  "metadata": [
+    {
+      "index": 0,
+      "name": "Global Skills Development Report",
+      "url": "https://www.shl.com/products/product-catalog/view/global-skills-development-report/",
+      "test_type": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "P"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "SHL Occupational Personality Questionnaire (OPQ32r)",
+      "url": "https://www.shl.com/products/assessments/personality-assessment/shl-occupational-personality-questionnaire-opq/",
+      "test_type": [
+        "P"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "SHL Verify Cognitive Assessment",
+      "url": "https://www.shl.com/products/assessments/cognitive-assessments/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "SHL Motivational Questionnaire (MQ)",
+      "url": "https://www.shl.com/products/assessments/personality-assessment/shl-motivation-questionnaire-mq/",
+      "test_type": [
+        "P"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "SHL Situational Judgment Test (SJT)",
+      "url": "https://www.shl.com/products/assessments/behavioral-assessments/situation-judgement-tests-sjt/",
+      "test_type": [
+        "B",
+        "S"
+      ]
+    },
+    {
+      "index": 5,
+      "name": "SHL 360 Feedback",
+      "url": "https://www.shl.com/products/360/",
+      "test_type": [
+        "B"
+      ]
+    },
+    {
+      "index": 6,
+      "name": "SHL Technical Skills Assessment",
+      "url": "https://www.shl.com/products/assessments/skills-and-simulations/technical-skills/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 7,
+      "name": "SHL Coding Simulation",
+      "url": "https://www.shl.com/products/assessments/skills-and-simulations/coding-simulations/",
+      "test_type": [
+        "S",
+        "K"
+      ]
+    },
+    {
+      "index": 8,
+      "name": "SHL Business Skills Assessment",
+      "url": "https://www.shl.com/products/assessments/skills-and-simulations/business-skills/",
+      "test_type": [
+        "K",
+        "S"
+      ]
+    },
+    {
+      "index": 9,
+      "name": "SHL Call Center Simulation",
+      "url": "https://www.shl.com/products/assessments/skills-and-simulations/call-center-simulations/",
+      "test_type": [
+        "S"
+      ]
+    },
+    {
+      "index": 10,
+      "name": "SHL Language Evaluation",
+      "url": "https://www.shl.com/products/assessments/skills-and-simulations/language-evaluation/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 11,
+      "name": "SHL Universal Competency Framework",
+      "url": "https://www.shl.com/products/assessments/behavioral-assessments/universal-competency-framework/",
+      "test_type": [
+        "B"
+      ]
+    },
+    {
+      "index": 12,
+      "name": "SHL Realistic Job Preview (RJP)",
+      "url": "https://www.shl.com/products/assessments/behavioral-assessments/realistic-job-and-culture-previews-rjp/",
+      "test_type": [
+        "S",
+        "B"
+      ]
+    },
+    {
+      "index": 13,
+      "name": "SHL Numerical Reasoning",
+      "url": "https://www.shl.com/products/assessments/cognitive-assessments/shl-verify-numerical-reasoning/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 14,
+      "name": "SHL Verbal Reasoning",
+      "url": "https://www.shl.com/products/assessments/cognitive-assessments/shl-verify-verbal-reasoning/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 15,
+      "name": "SHL Inductive Reasoning",
+      "url": "https://www.shl.com/products/assessments/cognitive-assessments/shl-verify-inductive-reasoning/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 16,
+      "name": "SHL Deductive Reasoning",
+      "url": "https://www.shl.com/products/assessments/cognitive-assessments/shl-verify-deductive-reasoning/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 17,
+      "name": "SHL Work Technology Profile",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-work-technology-profile/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 18,
+      "name": "SHL Manager Potential Survey",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-manager-potential-survey/",
+      "test_type": [
+        "P",
+        "B"
+      ]
+    },
+    {
+      "index": 19,
+      "name": "SHL Sales Talent Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-sales-talent-assessment/",
+      "test_type": [
+        "A",
+        "B",
+        "P"
+      ]
+    },
+    {
+      "index": 20,
+      "name": "SHL Customer Service Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-customer-service-assessment/",
+      "test_type": [
+        "A",
+        "B",
+        "S"
+      ]
+    },
+    {
+      "index": 21,
+      "name": "SHL Graduate招聘Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-graduate-assessment/",
+      "test_type": [
+        "A",
+        "B",
+        "P"
+      ]
+    },
+    {
+      "index": 22,
+      "name": "SHL Integrity Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-integrity-assessment/",
+      "test_type": [
+        "P"
+      ]
+    },
+    {
+      "index": 23,
+      "name": "SHL Critical Thinking Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-critical-thinking-assessment/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 24,
+      "name": "SHL Data Analysis Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-data-analysis-assessment/",
+      "test_type": [
+        "A",
+        "K"
+      ]
+    },
+    {
+      "index": 25,
+      "name": "SHL Leadership Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-leadership-assessment/",
+      "test_type": [
+        "B",
+        "P"
+      ]
+    },
+    {
+      "index": 26,
+      "name": "SHL Mechanical Reasoning",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-mechanical-reasoning/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 27,
+      "name": "SHL Checking Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-checking-assessment/",
+      "test_type": [
+        "A"
+      ]
+    },
+    {
+      "index": 28,
+      "name": "SHL Work Style Assessment",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-work-style-assessment/",
+      "test_type": [
+        "P"
+      ]
+    },
+    {
+      "index": 29,
+      "name": "SHL Financial Reasoning",
+      "url": "https://www.shl.com/products/product-catalog/view/shl-financial-reasoning/",
+      "test_type": [
+        "A",
+        "K"
+      ]
+    },
+    {
+      "index": 30,
+      "name": ".NET Framework 4.5",
+      "url": "https://www.shl.com/products/product-catalog/view/net-framework-4-5/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 31,
+      "name": ".NET MVC (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/net-mvc-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 32,
+      "name": ".NET MVVM (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/net-mvvm-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 33,
+      "name": ".NET WCF (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/net-wcf-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 34,
+      "name": ".NET WPF (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/net-wpf-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 35,
+      "name": ".NET XAML (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/net-xaml-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 36,
+      "name": "Accounts Payable (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 37,
+      "name": "Accounts Payable Simulation (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/accounts-payable-simulation-new/",
+      "test_type": [
+        "S"
+      ]
+    },
+    {
+      "index": 38,
+      "name": "Accounts Receivable (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-new/",
+      "test_type": [
+        "K"
+      ]
+    },
+    {
+      "index": 39,
+      "name": "Accounts Receivable Simulation (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/accounts-receivable-simulation-new/",
+      "test_type": [
+        "S"
+      ]
+    },
+    {
+      "index": 40,
+      "name": "ADO.NET (New)",
+      "url": "https://www.shl.com/products/product-catalog/view/ado-net-new/",
+      "test_type": [
+        "K"
+      ]
+    }
+  ]
+}

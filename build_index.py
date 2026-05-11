@@ -1,15 +1,11 @@
 """
-Build FAISS vector index from SHL catalog.
-Embeds each assessment and saves to catalog.index for fast retrieval.
+Build TF-IDF index from SHL catalog.
+Saves documents and metadata to a single JSON file for retrieval.
 """
 
 import json
 import os
 from typing import List, Dict
-import numpy as np
-
-# Use sentence-transformers with all-MiniLM-L6-v2 (local, free embedding model)
-from sentence_transformers import SentenceTransformer
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -22,7 +18,7 @@ def load_catalog() -> List[Dict]:
 
 
 def create_document(assessment: Dict) -> str:
-    """Combine assessment metadata into a single text document for embedding."""
+    """Combine assessment metadata into a single text document for TF-IDF indexing."""
     parts = [
         assessment["name"],
         assessment.get("description", ""),
@@ -42,15 +38,12 @@ def create_document(assessment: Dict) -> str:
 
 
 def build_index():
-    """Build the FAISS index from catalog embeddings."""
+    """Build TF-IDF indexable data from catalog."""
     print("Loading catalog...")
     catalog = load_catalog()
     print(f"Loaded {len(catalog)} assessments")
 
-    print("Loading embedding model (all-MiniLM-L6-v2)...")
-    model = SentenceTransformer("all-MiniLM-L6-v2")
-
-    print("Creating embedding documents...")
+    print("Creating documents...")
     documents = []
     metadatas = []
 
@@ -64,34 +57,26 @@ def build_index():
             "test_type": assessment.get("test_type", []),
         })
 
-    print(f"Embedding {len(documents)} documents...")
-    embeddings = model.encode(documents, show_progress_bar=True)
-    embeddings = np.array(embeddings).astype("float32")
+    # Save combined data file (retriever loads both documents and metadata)
+    data_path = os.path.join(BASE_DIR, "catalog_data.json")
+    data = {
+        "documents": documents,
+        "metadata": metadatas,
+    }
+    with open(data_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Saved catalog data to {data_path}")
 
-    # Normalize for cosine similarity
-    norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
-    norms[norms == 0] = 1
-    embeddings = embeddings / norms
+    # Clean up old files that are no longer needed
+    old_files = ["catalog.index", "catalog_meta.json"]
+    for fname in old_files:
+        fpath = os.path.join(BASE_DIR, fname)
+        if os.path.exists(fpath):
+            os.remove(fpath)
+            print(f"Removed old file: {fname}")
 
-    print(f"Building FAISS index with dimension {embeddings.shape[1]}...")
-    import faiss
-    index = faiss.IndexFlatIP(embeddings.shape[1])  # Inner product for normalized vectors = cosine
-    index.add(embeddings)
-
-    # Save index
-    index_path = os.path.join(BASE_DIR, "catalog.index")
-    faiss.write_index(index, index_path)
-    print(f"Saved FAISS index to {index_path}")
-
-    # Save metadata
-    meta_path = os.path.join(BASE_DIR, "catalog_meta.json")
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(metadatas, f, indent=2)
-    print(f"Saved metadata to {meta_path}")
-
-    print("\nIndex built successfully!")
-    print(f"  - {index.ntotal} vectors")
-    print(f"  - Dimension: {embeddings.shape[1]}")
+    print(f"\nIndex built successfully!")
+    print(f"  - {len(documents)} documents")
 
 
 if __name__ == "__main__":
