@@ -1,5 +1,5 @@
 """
-Build TF-IDF index from SHL catalog.
+Build TF-IDF index from SHL catalog. 
 Saves documents and metadata to a single JSON file for retrieval.
 """
 
