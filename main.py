@@ -1,6 +1,6 @@
 """
 FastAPI application for SHL Assessment Recommender.
-Provides /health and /chat endpoints.
+Provides /health and /chat endpoints. 
 """
 
 import os
