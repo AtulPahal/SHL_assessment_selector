@@ -1,5 +1,5 @@
 """
-TF-IDF retrieval wrapper for SHL catalog.
+TF-IDF retrieval wrapper for SHL catalog. 
 Provides keyword/semantic-like search without external API calls.
 """
 
