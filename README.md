@@ -1,4 +1,4 @@
-# SHL Assessment Recommender 
+# SHL Assessment Recommender
 
 A production-grade Conversational SHL Assessment Recommender built with FastAPI, FAISS, and Gemini.
 
